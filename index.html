@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -39,7 +39,16 @@
       <div class="container">
         <h1 class="main-title">Effective Solutions <br />
           for Your Business</h1>
-        <button class="modal-btn hero-btn" type="button">Order Service</button>
+        <button class="modal-btn hero-btn" type="button" data-modal-open> Order Service </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div
+          class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="24" height="24">
+            <use href="./images/sym.svg#icon-close"></use>
+          </svg>
+        </button></div>
+        </div>
       </div>  
       </section>
       <section class="qual">
@@ -306,5 +315,6 @@
         
       </div> 
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
